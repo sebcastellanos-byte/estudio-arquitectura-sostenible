@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TERRAVIVA | Estudio de Arquitectura Sostenible & Asesoría Técnica · Arq. Sebastián Castellanos</title>
+  <meta name="description" content="Estudio de arquitectura especializado en diseño bioclimático, estructuras sostenibles y asesoría arquitectónica en Colombia. Liderado por Sebastián Castellanos Acosta.">
+  
+  <!-- Google Fonts: Playfair Display + Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       NAVIGATION BAR
+       ========================================================================= -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#inicio" class="brand-wrap" aria-label="TERRAVIVA Inicio">
+        <!-- Official Logo Emblem from Downloads -->
+        <img src="assets/images/logo_emblem.png" alt="TERRAVIVA Logo" class="brand-img">
+
+        <div>
+          <div class="brand-title">TERRAVIVA</div>
+          <div class="brand-sub">Estudio de Arquitectura & Asesoría</div>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+          <li><a href="#asesoria" class="nav-link">Asesoría & Servicios</a></li>
+          <li><a href="#portafolio" class="nav-link">Obras & Proyectos</a></li>
+          <li><a href="#dossier" class="nav-link">Hoja de Vida del Estudio</a></li>
+          <li><a href="#equipo" class="nav-link">Equipo & Integrantes</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <!-- Quick Action Buttons -->
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <a href="assets/docs/portafolio_completo_sebastian_castellanos.pdf" target="_blank" class="btn btn-secondary" style="padding: 9px 18px; font-size: 0.84rem;">
+          📥 Portafolio PDF
+        </a>
+        <a href="https://wa.me/573239731084" target="_blank" class="btn btn-primary" style="padding: 9px 18px; font-size: 0.84rem;">
+          WhatsApp
+        </a>
+        <button class="mobile-toggle" aria-label="Menú">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       HERO SECTION (CON LOGOTIPO Y NOMBRE DEL ESTUDIO EN LA DERECHA)
+       ========================================================================= -->
+  <section id="inicio" class="hero-section">
+    <div class="container hero-grid">
+      <div>
+        <div class="hero-tag">
+          <span>🌿</span> Arquitectura Sostenible, Bioclimática & Asesoría Integral
+        </div>
+
+        <h1 class="hero-title">
+          Arquitectura con propósito en <span>simbiosis</span> con la naturaleza.
+        </h1>
+
+        <p class="hero-lead">
+          Taller de diseño arquitectónico y consultoría bioclimática en Colombia. Creamos espacios confortables, funcionales y de bajo impacto ambiental con rigor técnico y sensibilidad territorial.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#portafolio" class="btn btn-primary">
+            Ver Proyectos del Portafolio <span>↓</span>
+          </a>
+          <a href="#asesoria" class="btn btn-secondary">
+            Nuestros Servicios de Asesoría
+          </a>
+          <a href="assets/docs/portafolio_completo_sebastian_castellanos.pdf" target="_blank" class="btn btn-accent">
+            📄 Portafolio Oficial (PDF)
+          </a>
+        </div>
+
+        <div class="hero-kpis">
+          <div>
+            <div class="kpi-num">100%</div>
+            <div class="kpi-label">Criterio Bioclimático Pasivo</div>
+          </div>
+          <div>
+            <div class="kpi-num">3 Proyectos</div>
+            <div class="kpi-label">Oficiales en Portafolio</div>
+          </div>
+          <div>
+            <div class="kpi-num">BIM</div>
+            <div class="kpi-label">Revit, Twinmotion & Lumion</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual Brand Display (Logo Oficial Descargado) -->
+      <div class="hero-brand-card">
+        <img src="assets/images/logo_terraviva.jpg" alt="TERRAVIVA Estudio de Arquitectura & Asesoría" class="hero-brand-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       ASESORÍA ARQUITECTÓNICA & SERVICIOS
+       ========================================================================= -->
+  <section id="asesoria" class="services-section">
+    <div class="container">
+      <div class="section-head">
+        <span class="badge-tag">Servicios del Estudio</span>
+        <h2>Asesoría & Consultoría Arquitectónica</h2>
+        <p>Acompañamiento profesional desde el análisis de terreno hasta la planimetría constructiva.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">📐</div>
+          <h3>Asesoría y Viabilidad de Lotes</h3>
+          <p>Diagnóstico técnico previo a la compra o diseño de tu terreno. Evaluación de pendientes, asoleamiento y vientos.</p>
+          <ul class="service-bullets">
+            <li>Análisis de asoleamiento y sombras</li>
+            <li>Orientación óptima de la edificación</li>
+            <li>Viabilidad topográfica y accesos</li>
+          </ul>
+          <a href="#contacto" class="btn btn-secondary" style="font-size: 0.8rem; padding: 8px 14px; width: 100%;">
+            Consultar Lote
+          </a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">☀️</div>
+          <h3>Consultoría Bioclimática</h3>
+          <p>Estrategias pasivas de confort térmico para evitar el uso excesivo de climatización mecánica costosa.</p>
+          <ul class="service-bullets">
+            <li>Ventilación cruzada y tiro térmico</li>
+            <li>Galerías solares e inercia térmica</li>
+            <li>Lamas y celosías de protección solar</li>
+          </ul>
+          <a href="#contacto" class="btn btn-secondary" style="font-size: 0.8rem; padding: 8px 14px; width: 100%;">
+            Solicitar Estudio
+          </a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🎋</div>
+          <h3>Estructuras Sostenibles & Madera</h3>
+          <p>Diseño de cubiertas y estructuras de bajo impacto con materiales renovables y sistemas sismorresistentes.</p>
+          <ul class="service-bullets">
+            <li>Detalle constructivo de uniones metálicas</li>
+            <li>Cimentación en pedestales hidrófugos</li>
+            <li>Supervisión técnica de montaje en obra</li>
+          </ul>
+          <a href="#contacto" class="btn btn-secondary" style="font-size: 0.8rem; padding: 8px 14px; width: 100%;">
+            Asesoría Estructural
+          </a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🏛️</div>
+          <h3>Modelado BIM & Licenciamiento</h3>
+          <p>Desarrollo técnico en Autodesk Revit, renders fotorrealistas y asesoría para trámites ante curadurías y POT.</p>
+          <ul class="service-bullets">
+            <li>Planimetría técnica y cuadros de áreas</li>
+            <li>Renders fotorrealistas en Twinmotion/Lumion</li>
+            <li>Cumplimiento de normativa urbanística</li>
+          </ul>
+          <a href="#contacto" class="btn btn-secondary" style="font-size: 0.8rem; padding: 8px 14px; width: 100%;">
+            Cotizar Planos
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       OBRAS Y PROYECTOS (SOLO LOS 3 PROYECTOS OFICIALES)
+       ========================================================================= -->
+  <section id="portafolio" class="portfolio-section">
+    <div class="container">
+      <div class="section-head">
+        <span class="badge-tag">Portafolio Oficial</span>
+        <h2>Obras & Proyectos del Portafolio</h2>
+        <p>Los 3 proyectos documentados en el portafolio oficial. Presiona los botones para ingresar a revisar las láminas y planimetría de cada uno.</p>
+      </div>
+
+      <!-- Filter Chips -->
+      <div class="portfolio-filter-row">
+        <button class="filter-chip active" data-filter="all">Todos los Proyectos (3)</button>
+        <button class="filter-chip" data-filter="equipamientos">01 Geriátrico Tibasosa</button>
+        <button class="filter-chip" data-filter="espacio-publico">02 Parque Oriente Verde</button>
+        <button class="filter-chip" data-filter="vivienda">03 Garden House</button>
+      </div>
+
+      <!-- Dynamic Portfolio Grid (Rendered by app.js: Only 3 projects) -->
+      <div id="portfolio-grid" class="portfolio-grid"></div>
+
+      <!-- Download Banner for PORTAFOLIO@.pdf -->
+      <div class="portfolio-download-box">
+        <div>
+          <h3>¿Deseas descargar el Portafolio Técnico Completo?</h3>
+          <p>
+            Incluye las láminas completas con memoria descriptiva, plantas acotadas, perfiles viales y detalles constructivos de los 3 proyectos.
+          </p>
+        </div>
+        <div style="display: flex; gap: 12px; flex-shrink: 0; flex-wrap: wrap;">
+          <a href="assets/docs/portafolio_completo_sebastian_castellanos.pdf" target="_blank" class="btn btn-accent">
+            📥 Abrir Portafolio PDF Completo
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       HOJA DE VIDA CORPORATIVA (EXCLUSIVAMENTE DEL ESTUDIO TERRAVIVA)
+       ========================================================================= -->
+  <section id="dossier" class="dossier-section">
+    <div class="container">
+      <div class="section-head">
+        <span class="badge-tag">Perfil Institucional</span>
+        <h2>Hoja de Vida del Estudio</h2>
+        <p>Identidad corporativa, misión, visión y capacidades técnicas de TERRAVIVA como estudio arquitectónico.</p>
+      </div>
+
+      <div class="dossier-grid">
+        <!-- Left: Misión, Visión, Valores del Estudio -->
+        <div class="dossier-left">
+          <div class="dossier-block">
+            <h3>🌱 Misión del Estudio</h3>
+            <p>
+              Proyectar y materializar espacios arquitectónicos que trasciendan lo convencional mediante un enfoque bioclimático, humanizado y de bajo impacto ambiental, integrando la ciencia ambiental con soluciones estéticas cálidas y materiales sostenibles adaptados a la geografía colombiana.
+            </p>
+          </div>
+
+          <div class="dossier-block">
+            <h3>🎯 Visión Institucional</h3>
+            <p>
+              Consolidar a TERRAVIVA para el año 2030 como un estudio líder en Colombia y la región andina en diseño bioclimático pasivo, espacios públicos regenerativos y consultoría técnica de hábitats sostenibles de alta eficiencia energética.
+            </p>
+          </div>
+
+          <div class="dossier-block">
+            <h3>⚖️ Valores Corporativos</h3>
+            <p>
+              <strong>Conciencia Territorial:</strong> Respeto profundo por el microclima, la topografía y las comunidades locales. <br>
+              <strong>Rigor Técnico & BIM:</strong> Modelado computacional 2D y 3D de alta precisión que minimiza imprevistos en obra. <br>
+              <strong>Ética y Honestidad Material:</strong> Prioridad a soluciones constructivas limpias, duraderas y de bajo mantenimiento.
+            </p>
+          </div>
+        </div>
+
+        <!-- Right: Ficha Institucional de TERRAVIVA -->
+        <div class="dossier-spec-card">
+          <h3>Ficha Institucional de la Empresa</h3>
+          <p>Dossier corporativo de capacidades para contratación y asesorías.</p>
+
+          <table class="dossier-table">
+            <tbody>
+              <tr>
+                <td class="label">Razón Social</td>
+                <td class="value">TERRAVIVA Estudio de Arquitectura S.A.S.</td>
+              </tr>
+              <tr>
+                <td class="label">Actividad Principal</td>
+                <td class="value">Diseño Arquitectónico & Consultoría Bioclimática</td>
+              </tr>
+              <tr>
+                <td class="label">Campos de Acción</td>
+                <td class="value">Equipamientos Asistenciales, Espacio Público, Vivienda Sostenible</td>
+              </tr>
+              <tr>
+                <td class="label">Capacidad de Modelado</td>
+                <td class="value">Flujo BIM (Autodesk Revit), Twinmotion, Lumion, AutoCAD</td>
+              </tr>
+              <tr>
+                <td class="label">Cobertura de Asesoría</td>
+                <td class="value">Boyacá, Casanare, Cundinamarca y Cobertura Nacional</td>
+              </tr>
+              <tr>
+                <td class="label">Dirección / Sede</td>
+                <td class="value">Tunja — Boyacá, Colombia</td>
+              </tr>
+              <tr>
+                <td class="label">Contacto Corporativo</td>
+                <td class="value">+57 323 973 1084 · contacto@terraviva.arq</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <a href="assets/docs/portafolio_completo_sebastian_castellanos.pdf" target="_blank" class="btn btn-accent" style="width: 100%; text-align: center;">
+            📥 Descargar Portafolio & Dossier Corporativo (PDF)
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       EQUIPO MULTIDISCIPLINARIO & CV DE LOS INTEGRANTES
+       ========================================================================= -->
+  <section id="equipo" class="team-section">
+    <div class="container">
+      <div class="section-head">
+        <span class="badge-tag">Integrantes del Estudio</span>
+        <h2>Equipo Multidisciplinario</h2>
+        <p>Conoce a los profesionales y colaboradores del estudio, encabezados por su fundador.</p>
+      </div>
+
+      <div class="team-grid">
+        <!-- Integrante 1: Sebastián Castellanos Acosta (CV PERSONAL CON ICONO) -->
+        <div class="team-card featured">
+          <div class="team-avatar">
+            <div class="team-avatar-icon">📐</div>
+          </div>
+          <div class="team-body">
+            <h3 class="team-name">Sebastián Castellanos</h3>
+            <div class="team-role">Fundador & Director de Diseño</div>
+            <p class="team-desc">
+              Líder proyectual con enfoque en arquitectura humanizada, diseño solar pasivo, deshospitalización del espacio y modelado BIM en Revit.
+            </p>
+            
+            <!-- Hoja de Vida Personal de Sebastián -->
+            <div class="team-cv-box">
+              <div><strong>Formación:</strong> Estudiante de Arquitectura (9º Semestre) — <em>Universidad de Boyacá</em></div>
+              <div><strong>Bachillerato:</strong> Col. José Asunción Silva (Paipa)</div>
+              <div><strong>Software:</strong> Revit, AutoCAD, SketchUp, Lumion, Twinmotion, Photoshop, Illustrator</div>
+              <div><strong>Contacto:</strong> sebastiancastel55@gmail.com</div>
+              <div><strong>Teléfono:</strong> +57 323 973 1084</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Integrante 2: Ingeniero Estructural -->
+        <div class="team-card">
+          <div class="team-avatar">
+            <div class="team-avatar-icon">🏗️</div>
+          </div>
+          <div class="team-body">
+            <h3 class="team-name">Ing. Mateo Valencia Rios</h3>
+            <div class="team-role">Director de Estructuras & Cálculo</div>
+            <p class="team-desc">
+              Ingeniero civil especialista en estructuras sismorresistentes, maderas, uniones metálicas de precisión y cimentaciones de bajo impacto.
+            </p>
+            <div class="team-cv-box">
+              <div><strong>Especialidad:</strong> Cálculo NSR-10 & Maderas</div>
+              <div><strong>Enfoque:</strong> Estructuras Ligeras & Cimentaciones</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Integrante 3: Arquitecta Paisajista -->
+        <div class="team-card">
+          <div class="team-avatar">
+            <div class="team-avatar-icon">🌿</div>
+          </div>
+          <div class="team-body">
+            <h3 class="team-name">Arq. Valentina Restrepo</h3>
+            <div class="team-role">Paisajismo & Espacio Público</div>
+            <p class="team-desc">
+              Arquitecta enfocada en parques urbanos regenerativos, integración ecológica, flora nativa andina y diseño biofílico comunitario.
+            </p>
+            <div class="team-cv-box">
+              <div><strong>Especialidad:</strong> Paisajismo Regenerativo & SUDS</div>
+              <div><strong>Enfoque:</strong> Espacio Público & Biofilia</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Integrante 4: Ingeniera Ambiental -->
+        <div class="team-card">
+          <div class="team-avatar">
+            <div class="team-avatar-icon">📊</div>
+          </div>
+          <div class="team-body">
+            <h3 class="team-name">Ing. Andrea Gómez Duque</h3>
+            <div class="team-role">Consultora Ambiental & Eficiencia</div>
+            <p class="team-desc">
+              Ingeniera ambiental especialista en simulaciones térmicas, confort pasivo, captación hídrica pluvial y mitigación de huella de carbono.
+            </p>
+            <div class="team-cv-box">
+              <div><strong>Especialidad:</strong> Simulación Solar & Térmica</div>
+              <div><strong>Enfoque:</strong> Eficiencia Hídrica & Fotovoltaica</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       CONTACT SECTION
+       ========================================================================= -->
+  <section id="contacto" class="contact-section">
+    <div class="container contact-grid">
+      <div class="contact-card">
+        <span class="badge-tag">Hablemos</span>
+        <h2 style="font-size: 1.8rem; margin-bottom: 12px;">Solicita tu Asesoría</h2>
+        <p style="margin-bottom: 24px;">
+          Conversemos sobre tu terreno, tu proyecto de vivienda o el desarrollo de equipamientos sostenibles.
+        </p>
+
+        <div class="contact-method">
+          <div class="contact-icon">📱</div>
+          <div>
+            <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--color-text-muted); font-weight: 700;">Teléfono & WhatsApp</div>
+            <div style="font-weight: 700; font-size: 1.05rem;">
+              <a href="https://wa.me/573239731084" target="_blank">+57 323 973 1084</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-method">
+          <div class="contact-icon">📍</div>
+          <div>
+            <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--color-text-muted); font-weight: 700;">Sede & Cobertura</div>
+            <div style="font-weight: 700; font-size: 1.05rem;">Boyacá, Casanare y Cobertura Nacional (Colombia)</div>
+          </div>
+        </div>
+
+        <div class="contact-method">
+          <div class="contact-icon">✉️</div>
+          <div>
+            <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--color-text-muted); font-weight: 700;">Correos de Contacto</div>
+            <div style="font-weight: 700; font-size: 0.95rem;">
+              sebastiancastel55@gmail.com<br>sebcastellanos@uniboyaca.edu.co
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top: 24px;">
+          <a href="https://wa.me/573239731084" target="_blank" class="btn btn-primary" style="width: 100%;">
+            💬 Hablar directamente por WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div style="background: #ffffff; padding: 34px; border: 1px solid var(--color-border); border-radius: var(--radius-md);">
+        <h3 style="font-size: 1.35rem; margin-bottom: 20px;">Formulario de Asesoría Técnica</h3>
+
+        <div id="form-alert" style="display: none; background: #edf7ed; border: 1px solid #4caf50; color: #2e7d32; padding: 14px; border-radius: 6px; margin-bottom: 16px;"></div>
+
+        <form id="contact-form">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+            <div class="form-group">
+              <label class="form-label" for="form-name">Nombre Completo *</label>
+              <input type="text" id="form-name" class="form-input" placeholder="Tu nombre" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="form-phone">Teléfono / WhatsApp *</label>
+              <input type="tel" id="form-phone" class="form-input" placeholder="+57 300 000 0000" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="form-service">Tipo de Asesoría Requerida *</label>
+            <select id="form-service" class="form-input" required>
+              <option value="viabilidad">Asesoría y Viabilidad de Lote / Terreno</option>
+              <option value="diseno">Diseño Arquitectónico Sostenible</option>
+              <option value="equipamiento">Diseño de Equipamiento / Espacio Público</option>
+              <option value="consultoria">Consultoría en Eficiencia Térmica & BIM</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="form-loc">Ubicación del Terreno (Municipio / Región)</label>
+            <input type="text" id="form-loc" class="form-input" placeholder="Ej. Tibasosa, Tunja, Paipa, Yopal, etc.">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="form-msg">Mensaje o Detalles del Proyecto</label>
+            <textarea id="form-msg" class="form-input" placeholder="Cuéntanos brevemente sobre tu proyecto..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">
+            Enviar Solicitud de Asesoría
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       PROJECT MODAL LIGHTBOX (VISOR DE LÁMINAS DEL PORTAFOLIO)
+       ========================================================================= -->
+  <div id="project-modal" class="modal-overlay" role="dialog" aria-modal="true">
+    <div class="modal-box">
+      <button id="modal-close-btn" class="modal-close" aria-label="Cerrar">✕</button>
+
+      <div class="modal-media">
+        <img id="modal-main-img" src="" alt="Lámina de Proyecto">
+      </div>
+      <div id="modal-thumbs" class="modal-thumbs-row"></div>
+
+      <div class="modal-content">
+        <span id="modal-badge" class="badge-tag" style="margin-bottom: 6px;">Categoría</span>
+        <h2 id="modal-title" style="font-size: 1.7rem; margin-bottom: 4px;">Título del Proyecto</h2>
+        <div id="modal-loc" style="font-size: 0.82rem; color: var(--color-accent); font-weight: 700; margin-bottom: 16px;">Ubicación</div>
+
+        <p id="modal-desc" style="font-size: 0.96rem; line-height: 1.65; margin-bottom: 20px;">Descripción</p>
+
+        <div id="modal-meta-grid" class="modal-meta-grid"></div>
+
+        <div style="margin: 20px 0;">
+          <h4 style="font-size: 1rem; margin-bottom: 10px;">Criterios Técnicos y Planimetría Incluida:</h4>
+          <ul id="modal-features" style="list-style: none; display: flex; flex-direction: column; gap: 8px; font-size: 0.88rem; color: var(--color-text-muted);"></ul>
+        </div>
+
+        <div style="display: flex; gap: 12px; margin-top: 24px; flex-wrap: wrap;">
+          <a id="modal-doc-btn" href="#" target="_blank" class="btn btn-primary">
+            📥 Abrir Portafolio PDF Original
+          </a>
+          <a href="#contacto" onclick="document.getElementById('project-modal').classList.remove('active'); document.body.style.overflow='';" class="btn btn-secondary">
+            Consultar Asesoría para este Proyecto
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
+            <img src="assets/images/logo_emblem.png" alt="TERRAVIVA" style="width: 38px; height: 38px; border-radius: 50%; border: 1px solid var(--color-accent);">
+            <h3 style="color: #ffffff; font-family: var(--font-serif); font-size: 1.3rem; margin: 0;">TERRAVIVA</h3>
+          </div>
+          <p style="color: rgba(255, 255, 255, 0.6); font-size: 0.85rem; line-height: 1.6; max-width: 320px;">
+            Estudio de arquitectura bioclimática, hábitats sostenibles y asesoría técnica integral. Liderado por Sebastián Castellanos Acosta.
+          </p>
+        </div>
+
+        <div>
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#asesoria">Asesoría & Servicios</a></li>
+            <li><a href="#portafolio">Obras & Proyectos</a></li>
+            <li><a href="#dossier">Hoja de Vida del Estudio</a></li>
+            <li><a href="#equipo">Equipo & Integrantes</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Proyectos Portafolio</h4>
+          <ul>
+            <li><a href="#portafolio">01 Geriátrico Tibasosa</a></li>
+            <li><a href="#portafolio">02 Parque Oriente Verde</a></li>
+            <li><a href="#portafolio">03 Garden House (Yopal)</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Documentación</h4>
+          <ul>
+            <li><a href="assets/docs/portafolio_completo_sebastian_castellanos.pdf" target="_blank">📥 Portafolio Completo (PDF)</a></li>
+            <li><a href="https://wa.me/573239731084" target="_blank">💬 WhatsApp Directo</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 TERRAVIVA Estudio de Arquitectura Sostenible S.A.S. · Tunja — Boyacá, Colombia.
+        </div>
+        <div>
+          Arquitectura Bioclimática & Confort Ambiental
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
