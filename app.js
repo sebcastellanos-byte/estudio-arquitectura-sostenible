@@ -1,7 +1,7 @@
 /**
  * TERRAVIVA - ESTUDIO DE ARQUITECTURA SOSTENIBLE
  * Arq. Sebastián Castellanos Acosta · Universidad de Boyacá
- * Client Application Logic (V4 - Solo los 3 Proyectos Oficiales)
+ * Client Application Logic (V5 - Portafolio Completo con 4 Proyectos)
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -46,7 +46,7 @@ function initMobileMenu() {
 }
 
 /* -------------------------------------------------------------------------
-   2. PORTFOLIO DATA (LOS 3 PROYECTOS OFICIALES DEL PORTAFOLIO)
+   2. PORTFOLIO DATA (LOS 4 PROYECTOS OFICIALES DEL PORTAFOLIO TERMINADO)
    ------------------------------------------------------------------------- */
 const projectsData = [
   {
@@ -149,6 +149,39 @@ const projectsData = [
     ],
     docLink: 'assets/docs/portafolio_completo_sebastian_castellanos.pdf',
     docLabel: 'Ver Detalles y Planos en Portafolio (PDF)'
+  },
+  {
+    id: 'casa-origen',
+    num: '04',
+    title: 'Casa Origen',
+    subtitle: 'Vivienda Unifamiliar Campestre en Guadua',
+    location: 'Moniquirá — Boyacá',
+    area: '115 m²',
+    year: '2026 - 2',
+    category: 'guadua',
+    categoryLabel: 'Vivienda en Guadua',
+    leadImage: 'assets/images/portfolio_pages/pagina_11.png',
+    gallery: [
+      { title: 'Lámina 1: Memoria & Perspectiva Exterior', src: 'assets/images/portfolio_pages/pagina_11.png' },
+      { title: 'Lámina 2: Plantas, Cortes & Detalles en Guadua', src: 'assets/images/portfolio_pages/pagina_12.png' }
+    ],
+    shortDesc: 'Vivienda campestre de 115 m² en Moniquirá. Reinterpreta la arquitectura tradicional en guadua mediante lenguaje moderno, estructura sismorresistente y huella de carbono reducida.',
+    fullDesc: 'La propuesta busca reinterpretar la vivienda tradicional en guadua desde una perspectiva contemporánea, integrando sus características constructivas y estéticas con un lenguaje arquitectónico moderno. A su vez, plantea una alternativa de vivienda más sostenible y potencialmente económica, mediante la incorporación de la guadua como material renovable, contribuyendo a reducir el impacto ambiental y la huella de carbono asociada al proceso constructivo. De esta manera, el proyecto busca armonizar tradición, innovación y sostenibilidad, demostrando cómo los materiales y técnicas constructivas tradicionales pueden integrarse a nuevas formas de habitar el entorno rural.',
+    specs: [
+      { label: 'Ubicación', value: 'Moniquirá — Boyacá' },
+      { label: 'Tipo', value: 'Vivienda Campestre en Guadua' },
+      { label: 'Área', value: '115 m²' },
+      { label: 'Año', value: '2026 - 2' }
+    ],
+    features: [
+      'Planta Nivel 1 y Planta Cubierta acotadas con inclinación de cubierta al 20%.',
+      'Fachadas y cortes longitudinales con aleros calculados para protección climática.',
+      'Pedestales en concreto reforzado 0.7 x 0.4 x 0.5 cm con anclaje 5/8".',
+      'Base guadua punta flecha en plano seriado Calibre 1/4" con abrazadera metálica 5".',
+      'Guadua cepa Macana inmunizada en sales de bórax con relleno de mortero tipo S.'
+    ],
+    docLink: 'assets/docs/portafolio_completo_sebastian_castellanos.pdf',
+    docLabel: 'Ver Láminas y Detalles de Guadua (PDF)'
   }
 ];
 
