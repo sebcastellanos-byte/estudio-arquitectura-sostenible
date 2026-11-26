@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Memoria Descriptiva de Imagen Corporativa · TERRAVIVA</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+    @page {
+      size: letter portrait;
+      margin: 12mm 14mm 12mm 14mm;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: #1a201c;
+      background: #ffffff;
+      font-size: 8.5pt;
+      line-height: 1.38;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    /* Header */
+    .doc-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #183324;
+      margin-bottom: 10px;
+    }
+
+    .brand-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .brand-logo-img {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1.5px solid #c29029;
+    }
+
+    .brand-titles h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 16pt;
+      font-weight: 700;
+      color: #183324;
+      letter-spacing: 0.5px;
+      line-height: 1;
+    }
+
+    .brand-titles span {
+      font-size: 6.8pt;
+      text-transform: uppercase;
+      letter-spacing: 1.8px;
+      color: #c29029;
+      font-weight: 700;
+      display: block;
+      margin-top: 2px;
+    }
+
+    .meta-box {
+      text-align: right;
+      font-size: 7.2pt;
+      color: #4a5850;
+      line-height: 1.35;
+    }
+
+    .meta-box strong {
+      color: #183324;
+    }
+
+    /* Title Block */
+    .title-banner {
+      background: #edf3f0;
+      border-left: 4px solid #183324;
+      padding: 6px 10px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .title-banner h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 11pt;
+      color: #183324;
+      font-weight: 700;
+    }
+
+    .title-banner span {
+      font-size: 7pt;
+      font-weight: 600;
+      color: #c29029;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* Two-column layout */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 8px;
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 9pt;
+      font-weight: 700;
+      color: #183324;
+      border-bottom: 1px solid #c29029;
+      padding-bottom: 2px;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .section-title span {
+      color: #c29029;
+      font-size: 7.5pt;
+    }
+
+    p {
+      text-align: justify;
+      margin-bottom: 5px;
+      color: #2b3630;
+    }
+
+    /* Logo Morphology Box */
+    .morph-card {
+      background: #fbfaf7;
+      border: 1px solid #e2ddd5;
+      border-radius: 4px;
+      padding: 8px;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+
+    .morph-img-wrap {
+      width: 82px;
+      height: 82px;
+      flex-shrink: 0;
+      background: #ffffff;
+      border: 1px solid #dcd5ca;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4px;
+    }
+
+    .morph-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .morph-bullets {
+      list-style: none;
+      font-size: 7.4pt;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .morph-bullets li {
+      display: flex;
+      align-items: flex-start;
+      gap: 4px;
+      line-height: 1.25;
+    }
+
+    .morph-bullets strong {
+      color: #183324;
+      flex-shrink: 0;
+    }
+
+    /* Color Swatches */
+    .palette-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 6px;
+      margin-bottom: 8px;
+    }
+
+    .swatch {
+      border: 1px solid #dcd7ce;
+      border-radius: 4px;
+      overflow: hidden;
+      font-size: 6.8pt;
+      background: #ffffff;
+    }
+
+    .swatch-color {
+      height: 22px;
+      width: 100%;
+    }
+
+    .swatch-info {
+      padding: 3px 4px;
+      line-height: 1.2;
+    }
+
+    .swatch-info strong {
+      display: block;
+      color: #183324;
+      font-size: 6.9pt;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* Typography Box */
+    .type-box {
+      background: #f8f7f4;
+      border-radius: 4px;
+      border: 1px solid #e3ded6;
+      padding: 6px 8px;
+      margin-bottom: 8px;
+    }
+
+    .type-sample {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      margin-bottom: 3px;
+    }
+
+    .type-sample:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Application Rules */
+    .rules-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      font-size: 7.2pt;
+    }
+
+    .rule-item {
+      background: #ffffff;
+      border: 1px solid #e3ded6;
+      border-radius: 4px;
+      padding: 5px 7px;
+    }
+
+    .rule-item strong {
+      color: #183324;
+      display: block;
+      margin-bottom: 2px;
+      font-size: 7.4pt;
+    }
+
+    /* Footer */
+    .doc-footer {
+      margin-top: 10px;
+      padding-top: 6px;
+      border-top: 1px solid #183324;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 6.8pt;
+      color: #55625b;
+    }
+
+    .signature-badge {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .sig-line {
+      display: inline-block;
+      width: 110px;
+      border-bottom: 1px solid #183324;
+      margin-right: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Encabezado Institucional -->
+  <header class="doc-header">
+    <div class="brand-group">
+      <img src="C:/Users/sebas/.gemini/antigravity/scratch/estudio-arquitectura-sostenible/assets/images/logo_emblem.png" class="brand-logo-img" alt="TERRAVIVA">
+      <div class="brand-titles">
+        <h1>TERRAVIVA</h1>
+        <span>Estudio de Arquitectura Sostenible & Asesoría</span>
+      </div>
+    </div>
+    <div class="meta-box">
+      <div><strong>DOC:</strong> MD-IC-2026-01 · Versión Oficial</div>
+      <div><strong>Razón Social:</strong> TERRAVIVA Estudio de Arquitectura S.A.S.</div>
+      <div><strong>Sede:</strong> Tunja — Boyacá, Colombia</div>
+      <div><strong>Director:</strong> Arq. Sebastián Castellanos Acosta</div>
+    </div>
+  </header>
+
+  <!-- Banner de Título -->
+  <div class="title-banner">
+    <h2>MEMORIA DESCRIPTIVA DE IMAGEN CORPORATIVA</h2>
+    <span>Guía de Identidad Visual & Concepto Rector</span>
+  </div>
+
+  <!-- Fila 1: Naming & Justificación del Isotipo -->
+  <div class="grid-2">
+    <div>
+      <div class="section-title"><span>01.</span> Naming & Concepto Rector</div>
+      <p>
+        El nombre <strong>TERRAVIVA</strong> surge de la fusión etimológica de <em>Terra</em> (el territorio, el suelo andino y el respeto por el sustrato geográfico) y <em>Viva</em> (la biofilia, los ciclos biológicos de la naturaleza y el diseño regenerativo).
+      </p>
+      <p>
+        El estudio se fundamenta en proyectar hábitats donde la arquitectura funcione como un organismo vivo que respira, capta la radiación solar pasiva, gestiona el viento y emplea materiales renovables como la <em>Guadua Angustifolia</em> y la madera certificada, garantizando confort térmico y sismorresistencia sin sobrecostos energéticos.
+      </p>
+    </div>
+
+    <div>
+      <div class="section-title"><span>02.</span> Valores & Propósito de Marca</div>
+      <p>
+        <strong>Conciencia Territorial:</strong> Cada trazo responde al microclima específico (altiplano andino, piedemonte llanero o valles interandinos).
+      </p>
+      <p>
+        <strong>Honestidad Material:</strong> Expresión franca de las fibras naturales, la mampostería bioclimática y las uniones metálicas de precisión.
+      </p>
+      <p>
+        <strong>Rigor Técnico & BIM:</strong> Integración de modelado ambiental y planimetría constructiva fidedigna para eliminar imprevistos en obra.
+      </p>
+    </div>
+  </div>
+
+  <!-- Fila 2: Morfología y Síntesis del Isotipo -->
+  <div class="section-title"><span>03.</span> Morfología & Justificación Geométrica del Isotipo</div>
+  <div class="morph-card">
+    <div class="morph-img-wrap">
+      <img src="C:/Users/sebas/.gemini/antigravity/scratch/estudio-arquitectura-sostenible/assets/images/logo_emblem.png" alt="Isotipo">
+    </div>
+    <ul class="morph-bullets">
+      <li>
+        <strong>1. Geometría Perimetral Circular:</strong> Evoca la bóveda celeste, el ciclo infinito de los recursos naturales y la economía circular en la construcción.
+      </li>
+      <li>
+        <strong>2. Envolvente a Dos Aguas (El Refugio):</strong> Síntesis arquetípica de la vivienda y la estructura arquitectónica, simbolizando cobijo, protección climática y rigidez estructural.
+      </li>
+      <li>
+        <strong>3. Nervadura de la Hoja Viva (Biofilia Central):</strong> Posicionada en el núcleo del isotipo como emblema de la arquitectura viva, el confort ambiental y el uso estructural de la guadua colombiana.
+      </li>
+      <li>
+        <strong>4. Curvas Topográficas & Arco Solar Superior:</strong> Representan las curvas de nivel del relieve boyacense y el recorrido solar heliodónico (estudio de asoleamiento y cálculo de sombras proyectadas).
+      </li>
+    </ul>
+  </div>
+
+  <!-- Fila 3: Paleta Cromática Institucional -->
+  <div class="section-title"><span>04.</span> Paleta Cromática Institucional & Significado</div>
+  <div class="palette-grid">
+    <div class="swatch">
+      <div class="swatch-color" style="background: #183324;"></div>
+      <div class="swatch-info">
+        <strong>Verde Bosque Andino</strong>
+        HEX: #183324<br>
+        RGB: 24, 51, 36<br>
+        CMYK: 78, 45, 68, 55
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background: #c29029;"></div>
+      <div class="swatch-info">
+        <strong>Latón / Oro Solar</strong>
+        HEX: #C29029<br>
+        RGB: 194, 144, 41<br>
+        CMYK: 22, 42, 95, 8
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background: #f9f6f0; border-bottom: 1px solid #dcd7ce;"></div>
+      <div class="swatch-info">
+        <strong>Blanco Piedra Caliza</strong>
+        HEX: #F9F6F0<br>
+        RGB: 249, 246, 240<br>
+        CMYK: 2, 2, 5, 0
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background: #111513;"></div>
+      <div class="swatch-info">
+        <strong>Carbón Estructural</strong>
+        HEX: #111513<br>
+        RGB: 17, 21, 19<br>
+        CMYK: 75, 65, 67, 82
+      </div>
+    </div>
+  </div>
+
+  <!-- Fila 4: Tipografía & Criterios de Aplicación -->
+  <div class="grid-2">
+    <div>
+      <div class="section-title"><span>05.</span> Sistema Tipográfico</div>
+      <div class="type-box">
+        <div class="type-sample">
+          <span style="font-family: 'Playfair Display', serif; font-size: 11pt; font-weight: 700; color: #183324;">TERRAVIVA</span>
+          <span style="font-size: 6.8pt; color: #c29029; font-weight: 700;">PLAYFAIR DISPLAY · Titulares</span>
+        </div>
+        <p style="font-size: 7.2pt; margin: 0;">Aporta solidez institucional, orden formal clásico y distinción estética propia de los estudios de autor.</p>
+      </div>
+      <div class="type-box">
+        <div class="type-sample">
+          <span style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 9pt; font-weight: 600; color: #183324;">Plus Jakarta Sans</span>
+          <span style="font-size: 6.8pt; color: #c29029; font-weight: 700;">CUERPO TÉCNICO & PLANOS</span>
+        </div>
+        <p style="font-size: 7.2pt; margin: 0;">Optimizada para máxima legibilidad en rótulos, memorias de cálculo, acotaciones y medios digitales.</p>
+      </div>
+    </div>
+
+    <div>
+      <div class="section-title"><span>06.</span> Criterios de Aplicación & Soportes</div>
+      <div class="rules-grid">
+        <div class="rule-item">
+          <strong>Área de Protección (X):</strong>
+          Mantener un margen libre perimetral equivalente al 25% del diámetro del isotipo respecto a bordes y textos.
+        </div>
+        <div class="rule-item">
+          <strong>Reducción Mínima:</strong>
+          En medios impresos el isotipo no debe ser inferior a 12 mm de diámetro para salvaguardar la legibilidad de la hoja y el pórtico.
+        </div>
+        <div class="rule-item">
+          <strong>Soportes Sostenibles:</strong>
+          Aplicable en grabado láser sobre madera, culmos de guadua, papel ecológico reciclado y timbrado en papelería membretada.
+        </div>
+        <div class="rule-item">
+          <strong>Usos Prohibidos:</strong>
+          No deformar proporciones axiales, no sustituir colores institucionales ni alterar la jerarquía entre isotipo y logotipo.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pie de Página Institucional -->
+  <footer class="doc-footer">
+    <div>
+      TERRAVIVA Estudio de Arquitectura S.A.S. · NIT en trámite · Tunja, Boyacá, Colombia · Cel: +57 323 973 1084
+    </div>
+    <div class="signature-badge">
+      <span class="sig-line"></span>
+      <strong>Arq. Sebastián Castellanos Acosta</strong> (Director Proyectual)
+    </div>
+  </footer>
+
+</body>
+</html>

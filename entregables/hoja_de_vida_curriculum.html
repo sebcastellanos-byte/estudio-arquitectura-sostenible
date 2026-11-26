@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Curriculum Vitae & Hoja de Vida - Arq. Sebastián Castellanos Acosta</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        @page {
+            size: letter portrait;
+            margin: 0;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #E5E1D8;
+            color: #1a221e;
+            margin: 0;
+            padding: 0;
+        }
+
+        .sheet {
+            width: 8.5in;
+            height: 11in;
+            background-color: #FCFBF8;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+            box-sizing: border-box;
+            padding: 32px 36px 26px 36px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            page-break-after: always;
+        }
+        .sheet:last-child {
+            page-break-after: avoid;
+        }
+
+        /* TOP BANNER / HEADER (Common) */
+        .cv-header {
+            background: linear-gradient(135deg, #183324 0%, #204430 65%, #2a583e 100%);
+            color: #F9F6F0;
+            border-radius: 8px;
+            padding: 18px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-left: 6px solid #C29029;
+            box-shadow: 0 4px 12px rgba(24, 51, 36, 0.12);
+        }
+        .cv-header-info h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 22px;
+            letter-spacing: 0.5px;
+            font-weight: 700;
+            line-height: 1.1;
+        }
+        .cv-header-info .cv-subtitle {
+            font-size: 11px;
+            color: #C29029;
+            font-weight: 600;
+            letter-spacing: 1.8px;
+            text-transform: uppercase;
+            margin-top: 4px;
+        }
+        .cv-header-info .cv-tag {
+            font-size: 9.5px;
+            color: rgba(249, 246, 240, 0.8);
+            margin-top: 3px;
+        }
+
+        .cv-header-contact {
+            text-align: right;
+            font-size: 9px;
+            line-height: 1.5;
+            color: rgba(249, 246, 240, 0.9);
+            border-left: 1px solid rgba(194, 144, 41, 0.4);
+            padding-left: 18px;
+        }
+        .cv-header-contact strong {
+            color: #FFFFFF;
+        }
+        .cv-header-contact .gold-link {
+            color: #DFBA67;
+            font-weight: 600;
+        }
+
+        /* 2-COLUMN LAYOUT */
+        .cv-body {
+            display: grid;
+            grid-template-columns: 2.2in 1fr;
+            gap: 22px;
+            margin-top: 16px;
+            flex: 1;
+        }
+
+        /* SIDEBAR (Columna Izquierda) */
+        .cv-sidebar {
+            background: #F4F1EA;
+            border-radius: 6px;
+            padding: 16px 14px;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            border: 1px solid #E4DED2;
+        }
+        .sidebar-section h3 {
+            font-size: 10px;
+            font-weight: 700;
+            color: #183324;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            border-bottom: 2px solid #C29029;
+            padding-bottom: 4px;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .sidebar-section p {
+            font-size: 9px;
+            line-height: 1.45;
+            color: #3b463e;
+        }
+        
+        /* Items in sidebar */
+        .edu-item {
+            margin-bottom: 7px;
+        }
+        .edu-item strong {
+            font-size: 9.5px;
+            color: #183324;
+            display: block;
+            line-height: 1.2;
+        }
+        .edu-item span {
+            font-size: 8.5px;
+            color: #C29029;
+            font-weight: 600;
+            display: block;
+        }
+        .edu-item small {
+            font-size: 8px;
+            color: #6e7972;
+        }
+
+        /* Skill bars */
+        .skill-item {
+            margin-bottom: 6px;
+        }
+        .skill-name {
+            display: flex;
+            justify-content: space-between;
+            font-size: 8.5px;
+            font-weight: 600;
+            color: #25332a;
+            margin-bottom: 2px;
+        }
+        .skill-bar-bg {
+            height: 5px;
+            background: #D9D3C7;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+        .skill-bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #183324 0%, #C29029 100%);
+            border-radius: 3px;
+        }
+
+        /* Language & Certs */
+        .bullet-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        .bullet-list li {
+            font-size: 8.5px;
+            color: #344238;
+            position: relative;
+            padding-left: 10px;
+            line-height: 1.35;
+        }
+        .bullet-list li::before {
+            content: "▪";
+            color: #C29029;
+            position: absolute;
+            left: 0;
+            font-size: 10px;
+        }
+
+        /* MAIN CONTENT AREA (Columna Derecha) */
+        .cv-main {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .main-block h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 13.5px;
+            color: #183324;
+            font-weight: 700;
+            border-bottom: 1.5px solid #D5CFC2;
+            padding-bottom: 4px;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .main-block h2::before {
+            content: "";
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background: #C29029;
+            border-radius: 2px;
+        }
+        .main-block p {
+            font-size: 9.5px;
+            line-height: 1.45;
+            color: #2f3c33;
+            text-align: justify;
+        }
+
+        /* EXP CARDS */
+        .exp-card {
+            background: #FFFFFF;
+            border: 1px solid #E2DCD0;
+            border-radius: 6px;
+            padding: 9px 12px;
+            margin-bottom: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+            border-left: 3px solid #183324;
+        }
+        .exp-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 3px;
+        }
+        .exp-title {
+            font-size: 10.5px;
+            font-weight: 700;
+            color: #183324;
+        }
+        .exp-period {
+            font-size: 8.5px;
+            font-weight: 600;
+            color: #C29029;
+            background: #F5EFE0;
+            padding: 1px 6px;
+            border-radius: 3px;
+        }
+        .exp-company {
+            font-size: 8.5px;
+            font-weight: 600;
+            color: #5d6961;
+            margin-bottom: 4px;
+        }
+        .exp-card ul {
+            list-style: none;
+            padding-left: 8px;
+        }
+        .exp-card li {
+            font-size: 8.5px;
+            color: #3b473f;
+            line-height: 1.35;
+            position: relative;
+            padding-left: 8px;
+            margin-bottom: 2px;
+        }
+        .exp-card li::before {
+            content: "–";
+            color: #C29029;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        /* CAPABILITIES GRID (Empresariales) */
+        .capabilities-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+        }
+        .cap-box {
+            background: #FFFFFF;
+            border: 1px solid #E2DCD0;
+            border-radius: 5px;
+            padding: 8px 10px;
+            border-top: 2px solid #C29029;
+        }
+        .cap-box strong {
+            font-size: 9px;
+            color: #183324;
+            display: block;
+            margin-bottom: 3px;
+        }
+        .cap-box p {
+            font-size: 8px;
+            color: #4b584f;
+            line-height: 1.35;
+        }
+
+        /* FOOTER (Common) */
+        .cv-footer {
+            border-top: 1px solid #D5CEC1;
+            padding-top: 7px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 8px;
+            color: #79867e;
+        }
+        .cv-footer strong {
+            color: #183324;
+        }
+
+        /* ================= PAGE 2 STYLES ================= */
+        .portfolio-header {
+            margin-bottom: 12px;
+        }
+        .portfolio-header h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 16px;
+            color: #183324;
+            font-weight: 700;
+        }
+        .portfolio-header p {
+            font-size: 9px;
+            color: #C29029;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-bottom: 14px;
+        }
+        .project-card {
+            background: #FFFFFF;
+            border: 1px solid #D9D2C5;
+            border-radius: 6px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+        }
+        .project-card-img {
+            height: 90px;
+            width: 100%;
+            object-fit: cover;
+            border-bottom: 2px solid #C29029;
+            background: #204430;
+        }
+        .project-card-body {
+            padding: 9px 11px;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            justify-content: space-between;
+        }
+        .project-card-title {
+            font-size: 11px;
+            font-weight: 700;
+            color: #183324;
+            line-height: 1.2;
+            margin-bottom: 2px;
+        }
+        .project-card-meta {
+            font-size: 8px;
+            color: #C29029;
+            font-weight: 600;
+            margin-bottom: 5px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .project-card-desc {
+            font-size: 8px;
+            color: #404d44;
+            line-height: 1.35;
+            margin-bottom: 6px;
+        }
+        .project-card-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+        }
+        .project-tag {
+            background: #F2EFE8;
+            color: #183324;
+            font-size: 7px;
+            padding: 1.5px 5px;
+            border-radius: 3px;
+            font-weight: 600;
+            border: 1px solid #DFD9CC;
+        }
+
+        /* METHODOLOGY & REFERENCES */
+        .bottom-section {
+            display: grid;
+            grid-template-columns: 1.4fr 1fr;
+            gap: 14px;
+            margin-top: 4px;
+        }
+        .methodology-box {
+            background: #F5F2EB;
+            border-radius: 6px;
+            padding: 10px 14px;
+            border: 1px solid #DFD9CE;
+        }
+        .methodology-box h3 {
+            font-size: 10px;
+            font-weight: 700;
+            color: #183324;
+            margin-bottom: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            border-bottom: 1px solid #C29029;
+            padding-bottom: 3px;
+        }
+        .method-steps {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        .method-step {
+            display: flex;
+            gap: 6px;
+            font-size: 8px;
+            color: #3b473f;
+            line-height: 1.35;
+        }
+        .method-num {
+            color: #C29029;
+            font-weight: 700;
+            min-width: 14px;
+        }
+
+        .references-box {
+            background: #FFFFFF;
+            border-radius: 6px;
+            padding: 10px 14px;
+            border: 1px solid #DFD9CE;
+        }
+        .references-box h3 {
+            font-size: 10px;
+            font-weight: 700;
+            color: #183324;
+            margin-bottom: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            border-bottom: 1px solid #C29029;
+            padding-bottom: 3px;
+        }
+        .ref-item {
+            font-size: 8px;
+            color: #3f4c43;
+            margin-bottom: 5px;
+            line-height: 1.3;
+        }
+        .ref-item strong {
+            color: #183324;
+            font-size: 8.5px;
+            display: block;
+        }
+        .ref-item span {
+            color: #C29029;
+            font-weight: 600;
+        }
+
+        /* SIGNATURE BOX */
+        .signature-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #FFFFFF;
+            border: 1px dashed #C29029;
+            border-radius: 5px;
+            padding: 8px 14px;
+            margin-top: 8px;
+        }
+        .sig-text {
+            font-size: 8px;
+            color: #56645a;
+            max-width: 65%;
+            line-height: 1.3;
+        }
+        .sig-block {
+            text-align: right;
+            border-top: 1px solid #183324;
+            padding-top: 3px;
+            min-width: 140px;
+        }
+        .sig-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 10px;
+            font-weight: 700;
+            color: #183324;
+        }
+        .sig-title {
+            font-size: 7.5px;
+            color: #C29029;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ==============================================
+         HOJA 1 (PAGE 1): PERFIL, CAPACIDADES & TRAYECTORIA
+         ============================================== -->
+    <div class="sheet">
+        
+        <!-- HEADER -->
+        <header class="cv-header">
+            <div class="cv-header-info">
+                <h1>Sebastián Castellanos Acosta</h1>
+                <div class="cv-subtitle">Arquitecto • Consultor Bioclimático & Director de Proyectos</div>
+                <div class="cv-tag">Fundador de TERRAVIVA Estudio de Arquitectura Sostenible & Asesoría S.A.S.</div>
+            </div>
+            <div class="cv-header-contact">
+                <div>Tel / WA: <strong>+57 323 973 1084</strong></div>
+                <div>Correo: <strong>sebastiancastel55@gmail.com</strong></div>
+                <div>Académico: <strong>sebcastellanos@uniboyaca.edu.co</strong></div>
+                <div>Ubicación: <strong>Tunja • Paipa • Boyacá, Colombia</strong></div>
+                <div>Web: <span class="gold-link">sebcastellanos-byte.github.io</span></div>
+            </div>
+        </header>
+
+        <!-- BODY 2 COLUMNS -->
+        <div class="cv-body">
+            
+            <!-- LEFT SIDEBAR -->
+            <aside class="cv-sidebar">
+                
+                <!-- PERFIL RESUMIDO -->
+                <div class="sidebar-section">
+                    <h3>Perfil Profesional</h3>
+                    <p>
+                        Arquitecto en formación de noveno semestre (Universidad de Boyacá) con sólida fundamentación en arquitectura bioclimática, modelado BIM (LOD 300+) y diseño regenerativo. Liderazgo comprobado en estructuración de proyectos residenciales, dotacionales y espacio público sostenible en el altiplano cundiboyacense y regiones de Colombia.
+                    </p>
+                </div>
+
+                <!-- FORMACIÓN -->
+                <div class="sidebar-section">
+                    <h3>Formación Académica</h3>
+                    <div class="edu-item">
+                        <strong>Arquitectura (9° Semestre)</strong>
+                        <span>Universidad de Boyacá</span>
+                        <small>Tunja, Boyacá • 2021 – En curso</small>
+                    </div>
+                    <div class="edu-item">
+                        <strong>Bachiller Académico</strong>
+                        <span>Colegio José Asunción Silva</span>
+                        <small>Paipa, Boyacá • Graduado</small>
+                    </div>
+                </div>
+
+                <!-- SOFTWARE & COMPETENCIAS BIM -->
+                <div class="sidebar-section">
+                    <h3>Dominio de Software</h3>
+                    <div class="skill-item">
+                        <div class="skill-name"><span>Autodesk Revit BIM</span> <span>95%</span></div>
+                        <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 95%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name"><span>AutoCAD 2D/3D</span> <span>90%</span></div>
+                        <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 90%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name"><span>SketchUp Pro</span> <span>92%</span></div>
+                        <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 92%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name"><span>Twinmotion / Lumion</span> <span>88%</span></div>
+                        <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 88%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name"><span>Photoshop & Illustrator</span> <span>85%</span></div>
+                        <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 85%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name"><span>Simulación Solar / Clima</span> <span>86%</span></div>
+                        <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 86%;"></div></div>
+                    </div>
+                </div>
+
+                <!-- IDIOMAS & APTITUDES -->
+                <div class="sidebar-section">
+                    <h3>Aptitudes & Idiomas</h3>
+                    <ul class="bullet-list">
+                        <li><strong>Español:</strong> Nativo</li>
+                        <li><strong>Inglés:</strong> Nivel Técnico Arquitectónico B1</li>
+                        <li>Coordinación Interdisciplinar BIM</li>
+                        <li>Cálculo de Confort Higrotérmico</li>
+                        <li>Sistemas de Guadua & Madera (NSR-10)</li>
+                    </ul>
+                </div>
+
+            </aside>
+
+            <!-- RIGHT MAIN CONTENT -->
+            <main class="cv-main">
+                
+                <!-- ENFOQUE & FILOSOFÍA -->
+                <div class="main-block">
+                    <h2>Filosofía & Visión Sostenible</h2>
+                    <p>
+                        Mi práctica profesional y empresarial converge en entender el territorio, el microclima y los materiales de bajo impacto como generadores formales de la arquitectura. A través del estudio <strong>TERRAVIVA</strong>, aplico metodologías pasivas —ventilación cruzada, asoleamiento selectivo, inercia térmica e integración de flora nativa— garantizando espacios saludables, de alta eficiencia energética y adaptados a las condiciones geográficas colombianas.
+                    </p>
+                </div>
+
+                <!-- TRAYECTORIA LABORAL Y ROLES -->
+                <div class="main-block">
+                    <h2>Experiencia Laboral & Liderazgo de Proyectos</h2>
+                    
+                    <div class="exp-card">
+                        <div class="exp-card-header">
+                            <span class="exp-title">Fundador & Director de Proyectos Arquitectónicos</span>
+                            <span class="exp-period">2024 – Presente</span>
+                        </div>
+                        <div class="exp-company">TERRAVIVA Estudio de Arquitectura Sostenible & Asesoría • Paipa / Tunja</div>
+                        <ul>
+                            <li>Liderazgo integral en el diseño arquitectónico conceptual, técnico y bioclimático de proyectos institucionales y residenciales.</li>
+                            <li>Coordinación de modelos BIM en Autodesk Revit (LOD 300/350), detección de colisiones y extracción de cantidades de obra.</li>
+                            <li>Formulación de memorias bioclimáticas, estudios de asoleamiento, rosa de vientos y selección de materialidad regional de baja huella de carbono.</li>
+                            <li>Atención y asesoría técnica directa a clientes en viabilidad de lotes rurales y urbanos en Boyacá y Casanare.</li>
+                        </ul>
+                    </div>
+
+                    <div class="exp-card">
+                        <div class="exp-card-header">
+                            <span class="exp-title">Proyectista & Modelador BIM Junior</span>
+                            <span class="exp-period">2023 – 2024</span>
+                        </div>
+                        <div class="exp-company">Proyectos Académicos Avanzados e Intervenciones Urbanas • Universidad de Boyacá</div>
+                        <ul>
+                            <li>Desarrollo de planes maestros urbano-paisajísticos con criterios de biofilia y espacio público ecológico.</li>
+                            <li>Generación de planimetría ejecutiva, detalles constructivos en guadua estructural, uniones metálicas y cimentación sobre pedestales.</li>
+                            <li>Producción de visualizaciones 3D y recorridos virtuales hiperrealistas para sustentación técnica ante jurados evaluadores.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- CAPACIDADES EMPRESARIALES DE TERRAVIVA -->
+                <div class="main-block">
+                    <h2>Capacidades Laborales & Servicios Empresariales</h2>
+                    <div class="capabilities-grid">
+                        <div class="cap-box">
+                            <strong>1. Consultoría Bioclimática Pasiva</strong>
+                            <p>Análisis de trayectorias solares, sombras proyectadas, ventilación cruzada y confort térmico en climas fríos de altiplano y cálido-húmedos.</p>
+                        </div>
+                        <div class="cap-box">
+                            <strong>2. Modelado y Gestión BIM (Revit)</strong>
+                            <p>Desarrollo de gemelos digitales coordinados en arquitectura, estructuración espacial y cubicación técnica de materiales sin reprocesos.</p>
+                        </div>
+                        <div class="cap-box">
+                            <strong>3. Estructuras en Guadua & Madera</strong>
+                            <p>Asesoría en diseño con Guadua Angustifolia Kunth, conectores con mortero inyectado y preservación según normas sismorresistentes NSR-10.</p>
+                        </div>
+                        <div class="cap-box">
+                            <strong>4. Diagnóstico & Viabilidad de Lotes</strong>
+                            <p>Estudios preliminares de topografía, accesibilidad, microclima y potencial paisajístico para proyectos campestres o dotacionales.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+
+        <!-- FOOTER HOJA 1 -->
+        <footer class="cv-footer">
+            <div><strong>TERRAVIVA S.A.S.</strong> • Estudio de Arquitectura Sostenible & Asesoría</div>
+            <div>Currículum Vitae — Arq. Sebastián Castellanos Acosta • <strong>Página 1 de 2</strong></div>
+        </footer>
+
+    </div>
+
+    <!-- ==============================================
+         HOJA 2 (PAGE 2): PORTAFOLIO DE OBRAS, METODOLOGÍA & REFERENCIAS
+         ============================================== -->
+    <div class="sheet">
+        
+        <!-- HEADER HOJA 2 -->
+        <header class="cv-header">
+            <div class="cv-header-info">
+                <h1>Portafolio de Obras & Capacidades Técnicas</h1>
+                <div class="cv-subtitle">Proyectos Destacados • Modelado BIM • Bioclimática Aplicada</div>
+                <div class="cv-tag">Resumen ejecutivo de obras proyectadas y coordinadas por el estudio TERRAVIVA</div>
+            </div>
+            <div class="cv-header-contact">
+                <div>Portafolio Web Disponible en Línea:</div>
+                <div class="gold-link">sebcastellanos-byte.github.io/estudio-arquitectura-sostenible/</div>
+                <div>Código de Verificación: <strong>TRV-2026-CV</strong></div>
+            </div>
+        </header>
+
+        <!-- PROJECTS GRID (4 PROYECTOS DEL PORTAFOLIO) -->
+        <div style="margin-top: 14px;">
+            <div class="portfolio-header">
+                <h2>Proyectos Emblemáticos Desarrollados</h2>
+                <p>Obras institucionales, urbanas y residenciales con alto estándar sostenible</p>
+            </div>
+
+            <div class="projects-grid">
+                
+                <!-- PROYECTO 1: GERIATRICO -->
+                <div class="project-card">
+                    <img src="../assets/images/portfolio_pages/pagina_02.png" alt="Geriátrico Tibasosa" class="project-card-img">
+                    <div class="project-card-body">
+                        <div>
+                            <div class="project-card-title">01. Geriátrico Ntra. Sra. del Rosario</div>
+                            <div class="project-card-meta">
+                                <span>Tibasosa, Boyacá</span>
+                                <span>4.000 m² • 2026-1</span>
+                            </div>
+                            <p class="project-card-desc">
+                                Equipamiento dotacional de asistencia integral y terapéutica para el adulto mayor. Sistema de pabellones en torno a patios solares centrales, ventilación cruzada natural y accesibilidad universal continua.
+                            </p>
+                        </div>
+                        <div class="project-card-tags">
+                            <span class="project-tag">Dotacional</span>
+                            <span class="project-tag">Bioclimática</span>
+                            <span class="project-tag">Revit BIM</span>
+                            <span class="project-tag">Accesibilidad</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROYECTO 2: PARQUE ORIENTE VERDE -->
+                <div class="project-card">
+                    <img src="../assets/images/portfolio_pages/pagina_05.png" alt="Parque Oriente Verde" class="project-card-img">
+                    <div class="project-card-body">
+                        <div>
+                            <div class="project-card-title">02. Parque Oriente Verde</div>
+                            <div class="project-card-meta">
+                                <span>Tunja, Boyacá</span>
+                                <span>10.000 m² • 2025-2</span>
+                            </div>
+                            <p class="project-card-desc">
+                                Plan maestro de renovación ecológica urbana y espacio público activo. Incluye corredores biológicos nativos, sistemas urbanos de drenaje sostenible (SUDS), senderos lúdicos y plazas cívicas permeables.
+                            </p>
+                        </div>
+                        <div class="project-card-tags">
+                            <span class="project-tag">Espacio Público</span>
+                            <span class="project-tag">Paisajismo</span>
+                            <span class="project-tag">Drenaje SUDS</span>
+                            <span class="project-tag">Urbanismo</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROYECTO 3: GARDEN HOUSE -->
+                <div class="project-card">
+                    <img src="../assets/images/portfolio_pages/pagina_08.png" alt="Garden House" class="project-card-img">
+                    <div class="project-card-body">
+                        <div>
+                            <div class="project-card-title">03. Garden House (Vivienda Bioclimática)</div>
+                            <div class="project-card-meta">
+                                <span>Yopal, Casanare</span>
+                                <span>80 m² • 2025-1</span>
+                            </div>
+                            <p class="project-card-desc">
+                                Prototipo residencial compacto para clima cálido-húmedo. Grandes voladizos de protección solar, celosías perimetrales para circulación convectiva de brisas y cubiertas ajardinadas reductoras de radiación.
+                            </p>
+                        </div>
+                        <div class="project-card-tags">
+                            <span class="project-tag">Residencial</span>
+                            <span class="project-tag">Clima Cálido</span>
+                            <span class="project-tag">Cubierta Verde</span>
+                            <span class="project-tag">Confort Térmico</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROYECTO 4: CASA ORIGEN -->
+                <div class="project-card">
+                    <img src="../assets/images/portfolio_pages/pagina_11.png" alt="Casa Origen" class="project-card-img">
+                    <div class="project-card-body">
+                        <div>
+                            <div class="project-card-title">04. Casa Origen (Guadua & Piedra)</div>
+                            <div class="project-card-meta">
+                                <span>Moniquirá, Boyacá</span>
+                                <span>115 m² • 2026-2</span>
+                            </div>
+                            <p class="project-card-desc">
+                                Hábitat campestre modular despegado del terreno sobre pedestales de concreto ciclópeo. Estructura portante en Guadua Angustifolia Kunth tratada, uniones abulonadas y muros en tierra compactada.
+                            </p>
+                        </div>
+                        <div class="project-card-tags">
+                            <span class="project-tag">Guadua NSR-10</span>
+                            <span class="project-tag">Bioconstrucción</span>
+                            <span class="project-tag">Pedestales</span>
+                            <span class="project-tag">Sostenible</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- METODOLOGÍA BIM Y REFERENCIAS PROFESIONALES -->
+        <div class="bottom-section">
+            
+            <div class="methodology-box">
+                <h3>Metodología Integrada de Proyecto (TERRAVIVA BIM Flow)</h3>
+                <div class="method-steps">
+                    <div class="method-step">
+                        <span class="method-num">01.</span>
+                        <div><strong>Diagnóstico Bioclimático & Sitio:</strong> Análisis heliográfico, rosa de vientos, microclima y topografía georreferenciada.</div>
+                    </div>
+                    <div class="method-step">
+                        <span class="method-num">02.</span>
+                        <div><strong>Modelado BIM Paramétrico (Revit):</strong> Coordinación tridimensional espacial y estructural desde etapas tempranas.</div>
+                    </div>
+                    <div class="method-step">
+                        <span class="method-num">03.</span>
+                        <div><strong>Simulación & Confort Pasivo:</strong> Verificación de ganancias solares, iluminación diurna y ventilación cruzada.</div>
+                    </div>
+                    <div class="method-step">
+                        <span class="method-num">04.</span>
+                        <div><strong>Documentación Ejecutiva & Presupuesto:</strong> Generación de planimetría técnica constructiva y listas de cantidades exactas.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="references-box">
+                <h3>Referencias Profesionales & Académicas</h3>
+                
+                <div class="ref-item">
+                    <strong>Arq. Docente Coordinador de Taller</strong>
+                    <span>Facultad de Arquitectura • Universidad de Boyacá</span>
+                    Contacto institucional: decanatura.arquitectura@uniboyaca.edu.co
+                </div>
+
+                <div class="ref-item">
+                    <strong>Ing. Asesor de Estructuras & NSR-10</strong>
+                    <span>Consultoría en Proyectos Bioclimáticos & Guadua</span>
+                    Teléfono de contacto disponible a solicitud: +57 (8) 740 5000
+                </div>
+
+                <div class="ref-item">
+                    <strong>TERRAVIVA S.A.S. • Registro Comercial</strong>
+                    <span>Sede Central Boyacá • Nit en trámite</span>
+                    sebcastellanos-byte.github.io/estudio-arquitectura-sostenible/
+                </div>
+            </div>
+
+        </div>
+
+        <!-- DECLARACIÓN Y FIRMA -->
+        <div class="signature-box">
+            <div class="sig-text">
+                Certifico que la información consignada en esta hoja de vida, así como los proyectos arquitectónicos expuestos, corresponden enteramente a mi trayectoria académica, capacidad técnica y portafolio profesional en <strong>TERRAVIVA</strong>.
+            </div>
+            <div class="sig-block">
+                <div class="sig-name">Sebastián Castellanos Acosta</div>
+                <div class="sig-title">Arquitecto • Fundador TERRAVIVA</div>
+            </div>
+        </div>
+
+        <!-- FOOTER HOJA 2 -->
+        <footer class="cv-footer">
+            <div><strong>TERRAVIVA S.A.S.</strong> • Estudio de Arquitectura Sostenible & Asesoría</div>
+            <div>Currículum Vitae — Arq. Sebastián Castellanos Acosta • <strong>Página 2 de 2</strong></div>
+        </footer>
+
+    </div>
+
+</body>
+</html>
