@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tarjeta de Presentación Corporativa - TERRAVIVA S.A.S.</title>
+    <style>
+        @page {
+            size: letter portrait;
+            margin: 1.2cm 1.4cm 1.2cm 1.4cm;
+        }
+        body {
+            font-family: 'Segoe UI', Calibri, Arial, sans-serif;
+            color: #1a221e;
+            line-height: 1.35;
+            font-size: 9.5pt;
+            margin: 0;
+            padding: 0;
+        }
+        h1, h2, h3, h4 {
+            font-family: Georgia, 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header-table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #183324;
+            color: #FFFFFF;
+            margin-bottom: 10pt;
+            border-bottom: 3pt solid #C29029;
+        }
+        .header-table td {
+            padding: 9pt 14pt;
+            vertical-align: middle;
+        }
+        .title-brand {
+            font-size: 17pt;
+            font-weight: bold;
+            color: #FFFFFF;
+            letter-spacing: 1.5pt;
+        }
+        .subtitle-brand {
+            font-size: 8.5pt;
+            color: #DFBA67;
+            font-weight: bold;
+            letter-spacing: 1pt;
+            text-transform: uppercase;
+        }
+        .header-meta {
+            text-align: right;
+            font-size: 8pt;
+            color: #E2E8E4;
+            line-height: 1.3;
+        }
+
+        .section-title {
+            color: #183324;
+            font-size: 11pt;
+            font-weight: bold;
+            border-bottom: 1.5pt solid #C29029;
+            padding-bottom: 2pt;
+            margin-top: 8pt;
+            margin-bottom: 6pt;
+        }
+
+        .intro-box {
+            background-color: #FAF8F4;
+            border-left: 3pt solid #C29029;
+            padding: 6pt 10pt;
+            font-size: 9pt;
+            color: #2e3b33;
+            margin-bottom: 10pt;
+        }
+
+        /* CARDS CONTAINER TABLE */
+        .cards-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 10pt;
+        }
+        .cards-table td {
+            vertical-align: top;
+            padding: 4pt;
+        }
+
+        /* FACE A (ANVERSO) - DARK GREEN */
+        .card-front-box {
+            background-color: #183324;
+            border: 2pt solid #C29029;
+            padding: 12pt 14pt;
+            color: #FFFFFF;
+            text-align: center;
+            min-height: 170pt;
+        }
+        .card-front-sub {
+            font-size: 7pt;
+            color: #DFBA67;
+            letter-spacing: 1.5pt;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .card-front-title {
+            font-family: Georgia, serif;
+            font-size: 18pt;
+            font-weight: bold;
+            color: #FFFFFF;
+            letter-spacing: 2pt;
+            margin-top: 4pt;
+            margin-bottom: 2pt;
+        }
+        .card-front-tagline {
+            font-size: 7.5pt;
+            color: #DFBA67;
+            letter-spacing: 1pt;
+            text-transform: uppercase;
+            margin-bottom: 10pt;
+        }
+        .card-front-badge {
+            background-color: #234833;
+            border: 1pt solid #C29029;
+            color: #DFBA67;
+            font-size: 7pt;
+            padding: 2pt 8pt;
+            display: inline-block;
+            margin-top: 8pt;
+        }
+
+        /* FACE B (REVERSO) - LIGHT LIMESTONE */
+        .card-back-box {
+            background-color: #FAF8F4;
+            border: 2pt solid #183324;
+            border-left: 5pt solid #C29029;
+            padding: 10pt 12pt;
+            color: #183324;
+            min-height: 170pt;
+        }
+        .card-back-name {
+            font-family: Georgia, serif;
+            font-size: 13pt;
+            font-weight: bold;
+            color: #183324;
+            line-height: 1.1;
+        }
+        .card-back-role {
+            font-size: 7.5pt;
+            font-weight: bold;
+            color: #C29029;
+            letter-spacing: 1pt;
+            text-transform: uppercase;
+            margin-bottom: 6pt;
+        }
+        .contact-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 7.5pt;
+            margin-top: 4pt;
+            margin-bottom: 6pt;
+        }
+        .contact-table td {
+            padding: 2.5pt 0;
+            vertical-align: middle;
+            color: #2b3830;
+        }
+        .contact-label {
+            font-weight: bold;
+            color: #183324;
+            width: 65pt;
+        }
+
+        /* SPECS TABLE */
+        .specs-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 6pt;
+            margin-bottom: 6pt;
+        }
+        .specs-table td {
+            width: 25%;
+            padding: 6pt;
+            background-color: #FFFFFF;
+            border: 1pt solid #D9D2C5;
+            vertical-align: top;
+            font-size: 7.5pt;
+        }
+        .spec-head {
+            color: #C29029;
+            font-weight: bold;
+            font-size: 8pt;
+            text-transform: uppercase;
+            margin-bottom: 3pt;
+        }
+
+        .guide-box {
+            background-color: #F4F1EA;
+            border: 1pt dashed #C29029;
+            padding: 6pt 10pt;
+            font-size: 8pt;
+            color: #3b463e;
+            margin-top: 6pt;
+        }
+
+        .footer-table {
+            width: 100%;
+            border-collapse: collapse;
+            border-top: 1pt solid #C29029;
+            margin-top: 8pt;
+            font-size: 7.5pt;
+            color: #606d64;
+        }
+        .footer-table td {
+            padding-top: 4pt;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER INSTITUCIONAL -->
+    <table class="header-table">
+        <tr>
+            <td style="width: 65px; text-align: center;">
+                <img src="C:/Users/sebas/.gemini/antigravity/scratch/estudio-arquitectura-sostenible/assets/images/logo_emblem.png" width="55" height="55" alt="Logo TERRAVIVA" />
+            </td>
+            <td>
+                <div class="title-brand">TERRAVIVA</div>
+                <div class="subtitle-brand">Ficha de Arte Final • Tarjeta de Presentación Corporativa (Editable)</div>
+                <div style="font-size: 8pt; color: #CCD5CF; margin-top: 2pt;">Estudio de Arquitectura Sostenible & Asesoría Bioclimática S.A.S.</div>
+            </td>
+            <td class="header-meta">
+                <strong>Estándar:</strong> 90 × 50 mm (Doble Cara)<br>
+                <strong>Director:</strong> Arq. Sebastián Castellanos<br>
+                <strong>Formato:</strong> Word (.docx) 100% Editable
+            </td>
+        </tr>
+    </table>
+
+    <div class="intro-box">
+        <strong>Ficha Técnica de Identidad Personal & Comercial:</strong> Presentación oficial de las dos caras de la tarjeta de negocios corporativa de <strong>TERRAVIVA S.A.S.</strong> Los textos, números de teléfono, correos, enlaces y especificaciones de este documento son completamente editables en Word y Google Docs para adaptar la información en cualquier momento.
+    </div>
+
+    <!-- PRESENTACIÓN DE AMBAS CARAS -->
+    <div class="section-title">Diseño de Caras: Anverso (Marca) y Reverso (Contacto & Servicios)</div>
+
+    <table class="cards-table">
+        <tr>
+            <!-- CARA A: ANVERSO -->
+            <td style="width: 50%;">
+                <div style="font-weight: bold; color: #183324; font-size: 9pt; margin-bottom: 4pt;">
+                    Cara Frontal (Anverso) — Emblema & Marca
+                </div>
+                <div class="card-front-box">
+                    <div class="card-front-sub">TERRAVIVA • ESTUDIO | 05°43′N 73°21′W</div>
+                    <div style="margin: 10pt 0 4pt 0;">
+                        <img src="C:/Users/sebas/.gemini/antigravity/scratch/estudio-arquitectura-sostenible/assets/images/logo_emblem.png" width="55" height="55" alt="Emblema TERRAVIVA" />
+                    </div>
+                    <div class="card-front-title">TERRAVIVA</div>
+                    <div class="card-front-tagline">Arquitectura Sostenible & Asesoría Bioclimática</div>
+                    <div style="font-size: 7.5pt; color: #E0E8E3; margin-top: 6pt;">
+                        Diseño Solar Pasivo • Modelado BIM • Boyacá, Colombia
+                    </div>
+                    <div class="card-front-badge">Sostenibilidad & Eficiencia Energética</div>
+                </div>
+            </td>
+
+            <!-- CARA B: REVERSO -->
+            <td style="width: 50%;">
+                <div style="font-weight: bold; color: #183324; font-size: 9pt; margin-bottom: 4pt;">
+                    Cara Posterior (Reverso) — Datos & Servicios
+                </div>
+                <div class="card-back-box">
+                    <div class="card-back-name">Sebastián Castellanos Acosta</div>
+                    <div class="card-back-role">Arquitecto • Fundador & Director de Proyectos</div>
+                    <div style="font-size: 7.5pt; color: #5a665e; margin-bottom: 6pt;">
+                        Consultoría Bioclimática Pasiva & Coordinación BIM Revit
+                    </div>
+
+                    <table class="contact-table">
+                        <tr>
+                            <td class="contact-label">Tel / WhatsApp:</td>
+                            <td><strong>+57 323 973 1084</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="contact-label">Correo Personal:</td>
+                            <td>sebastiancastel55@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td class="contact-label">Correo Académico:</td>
+                            <td>sebcastellanos@uniboyaca.edu.co</td>
+                        </tr>
+                        <tr>
+                            <td class="contact-label">Ubicación:</td>
+                            <td>Tunja • Paipa • Boyacá, Colombia</td>
+                        </tr>
+                        <tr>
+                            <td class="contact-label">Sitio Web:</td>
+                            <td><strong style="color: #C29029;">sebcastellanos-byte.github.io</strong></td>
+                        </tr>
+                    </table>
+
+                    <div style="border-top: 1pt solid #D9D2C5; padding-top: 4pt; font-size: 7pt; color: #183324;">
+                        <strong>Servicios:</strong> Revit BIM LOD 300+ • Estructuras en Guadua (NSR-10) • Confort Higrotérmico
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <!-- ESPECIFICACIONES TÉCNICAS DE PRODUCCIÓN -->
+    <div class="section-title">Especificaciones Técnicas para Impresión Editorial</div>
+    <table class="specs-table">
+        <tr>
+            <td>
+                <div class="spec-head">01. Geometría & Corte</div>
+                <strong>90 × 50 mm</strong> (Corte final). Sangrado perimetral de 3 mm (96 × 56 mm total). Margen de seguridad interno de 4 mm. Esquinas rectas o redondeadas R=2mm.
+            </td>
+            <td>
+                <div class="spec-head">02. Papel & Sustrato</div>
+                <strong>Cartulina Opalina o Couché 350g</strong> con acabado superficial laminado mate sedoso (Soft-touch velvet). Máxima rigidez y tacto aterciopelado de alta gama.
+            </td>
+            <td>
+                <div class="spec-head">03. Acabados de Lujo</div>
+                <strong>Hot Stamping Oro Mate</strong> (#C29029) en marco perimetral y logotipo central. Barniz UV sectorizado brillante sobre letras y datos de contacto.
+            </td>
+            <td>
+                <div class="spec-head">04. Tipografía & Color</div>
+                <strong>Playfair Display</strong> en logotipo y jerarquía de nombres. <strong>Plus Jakarta Sans</strong> en datos de contacto. Tintas estandarizadas CMYK / Fogra39.
+            </td>
+        </tr>
+    </table>
+
+    <div class="guide-box">
+        <strong>Guía de Uso:</strong> Este documento fue diseñado para permitirte editar cualquier texto, número de contacto, correo o cargo directamente en Microsoft Word o Google Docs sin alterar la estructura gráfica ni la composición geométrica de la tarjeta.
+    </div>
+
+    <!-- PIE DE PÁGINA -->
+    <table class="footer-table">
+        <tr>
+            <td><strong>TERRAVIVA S.A.S.</strong> • Estudio de Arquitectura Sostenible & Asesoría</td>
+            <td style="text-align: right;">sebcastellanos-byte.github.io/estudio-arquitectura-sostenible/ • Hoja 1 de 1</td>
+        </tr>
+    </table>
+
+</body>
+</html>
